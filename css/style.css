@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:#111111;
+    font-family: "Montserrat";
+    color:#fff;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    overflow-x: hidden;
+    max-width: 80rem;
+    margin: auto;
+}
+.logo{
+    width: 100px;
+}
+.logo img {
+    width: 100%;
+}
+.list {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    text-transform: uppercase;
+    font-size: 15px;
+    
+}
+li select{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+.bar{
+    display: none;
+}
+@media screen and (max-width:806px) {
+    .bar{
+        display: contents;
+        color: #ff3343;
+        font-size: 50px;
+    }
+    .list{
+        display: none;
+    }
+}
+
+/*---------------------- hero section --------------------*/
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero .left {
+    width: 40%;
+} 
+.hero .left img {
+    width: 100%;
+}
+.hero .right-heading{
+    width: 50%;
+}
+.hero .right-heading h4 {
+    color: #f83241;
+    font-size: 1.4rem;
+}
+.hero .right-heading h1 {
+    font-size: 4rem;
+   
+}
+.hero .right-heading p {
+    font-size: 1.2rem;
+    line-height: 22px;
+    margin-top: 20px;
+}
+.hero .right-heading button {
+    background-color:#c91b28;
+    border: none;
+    color:#fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 18px 40px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1067px) {
+  .hero .right-heading h1{
+    font-size: 50px;
+  }
+  .hero .right-heading p{
+    font-size: 1rem;
+  }
+  .hero .right-heading button {
+    font-size: 16px;
+  }
+    
+}
+@media only screen and (max-width: 835px) {
+    .hero .right-heading h1{
+        font-size: 30px;
+      }
+      .hero .right-heading p{
+        font-size: 15px;
+      }
+      .hero .right-heading button {
+        font-size: 15px;
+      }
+}
+@media only screen and (max-width: 671px){
+    
+    .hero .right-heading h4 {
+        color: #f83241;
+        font-size: 14px;
+    }
+    .hero .right-heading h1{
+        font-size: 20px;
+      }
+      .hero .right-heading p{
+        font-size: 10px;
+        line-height: 15px;
+      }
+      .hero .right-heading button {
+        font-size: 12px;
+        padding: 7px 10px;
+      }
+}
+
+/* Rectangle box */
+.Rectangle{
+    width: 52%;
+    background-color:#181818 ;
+    height: 800px;
+    position: absolute;
+    left: 0px;
+    top: 650px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1133px){
+    .Rectangle{
+        margin-top: -100px;
+    }
+}
+@media only screen and (max-width: 1075px){
+    .Rectangle{
+    
+     height: 800px;
+ }
+ 
+ @media only screen and (max-width: 1072px){
+    .Rectangle{
+    
+     height: 1100px;
+ }
+ 
+ }
+ }
+@media only screen and (max-width: 876px){
+    .Rectangle{
+     margin-top: -200px;
+     height: 1080px;
+ }
+ 
+ }
+ @media only screen and (max-width: 600px){
+    .Rectangle{
+     margin-top: -300px;
+     height: 1180px;
+ }
+ 
+ }
+ @media only screen and (max-width: 836px){
+    .Rectangle{
+    margin-top: -130px;
+     height: 900px;
+ }
+}
+ @media only screen and (max-width: 799px){
+    .Rectangle{
+    margin-top: -200px;
+     height: 950px;
+ }
+ 
+ }
+ 
+ @media only screen and (max-width: 610px){
+    .Rectangle{
+    margin-top: -300px;
+     height: 950px;
+ }
+ 
+ }
+ 
+ 
+ @media only screen and (max-width: 500px){
+    .Rectangle{
+     margin-top: -340px;
+    
+ }
+ 
+ }
+/*----------------------- service section ----------------------*/
+ .service-section {
+    margin-top: 100px;
+}
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.service-card {
+    background-color:#1e1e1e;
+    width: 30%;
+}
+ .service-card:nth-child(2) {
+    background-color:#c91b28;
+    width: 30%;
+}
+.service-card .logo{
+    width: 20%;
+}
+.service-card .logo img{
+    width: 100%;
+}
+
+.service-card h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+ .service-card p {
+    font-size: 1.4rem;
+    color:#cecece;
+    text-align: center;
+}
+.service-btn{
+    text-align: center;
+}
+.service-btn button {
+    color: #f83241;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+ .service-card:nth-child(2) button {
+    color:#fff;
+}
+.service-btn i {
+    color:#f83241;
+    margin-left: 10px;
+}
+ .service-card:nth-child(2) .service-btn i {
+    color: #fff;
+}
+@media only screen and (max-width: 838px){
+    
+.service-card h1 {
+    font-size: 30px;
+   
+}
+.service-card p {
+    font-size: 15px;
+    text-align: none;
+  
+}
+}
+@media only screen and (max-width: 838px){
+    
+    .service-card h1 {
+        font-size: 20px;
+       
+    }
+    .service-card p{
+        font-size: 10px;
+    }
+    .service-btn button{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .service-card:nth-child(2) button {
+        color:#fff;
+        font-size:15px ;
+    }
+ 
+   
+}
+
+            /* service-second */
+.achivement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.achivement .left {
+    flex: 1.2;
+    text-align: center;
+}
+.achivement .left h1 {
+    color: #f83241;
+    font-size: 120px;
+    font-weight: 800;
+}
+.achivement .left p {
+    font-size: 32px;
+    font-weight: 600;
+}
+.achivement .right {
+    display: flex;
+    gap: 20px;
+    flex: 2;
+    flex-wrap: wrap;
+}
+ .right .card {
+    background-color: #1e1e1e;
+    width: 20rem;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right .card h1 {
+    color:#f83241;
+    font-size: 2.9rem;
+}
+ .right .card p {
+    color: #cecece;
+    font-size: 17px;
+    padding-top: 5px;
+}
+@media  screen and (max-width:535px){
+    .right .card{
+        width: 18rem;
+    }
+}
+
+/*----------------------- project section ---------------------*/
+.featured-projects {
+    max-width:1015px ;
+    margin:auto;
+    margin-top: 150px;
+}
+ .project-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+   
+}
+ .heading-left{
+    width: 60%;
+}
+.headline-right{
+    width: 50%;
+    
+   
+}
+
+ .project-headline h1 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.project-headline p {
+    padding-top: 14px;
+    color: #cecece;
+    padding-bottom: 12px;
+}
+.project-headline button {
+    background-color: #f83241;
+    border: none;
+    color: #fff ;
+    padding: 14px 40px;
+    text-transform: uppercase;
+    font-size: 17px;
+    cursor: pointer;
+    float: right;
+}
+
+/* .project-cards */
+ .project-cards {
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 40px;
+    justify-content: center;
+}
+ .project-card .project-img {
+    background-color: #1e1e1e;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+ .project-card h1 {
+    padding: 20px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.project-card span {
+    color: #f83241;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.project-card span button {
+    color: #f83241;
+    border: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    background-color: transparent;
+    font-weight: 600;
+    cursor: pointer;
+}
+ .project-card img {
+    width: 30rem;
+}
+
+@media only screen and (max-width: 1045px) {
+   .project-headline h1 {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    .project-headline p {
+        padding-top: 14px;
+        color: #fff;
+        padding-bottom: 12px;
+        font-size: 1rem;
+    }
+     .project-headline button {
+        background-color:#f83241;
+        color: #fff ;
+        padding: 8px 20px;
+        border: none;
+        text-transform: uppercase;
+        font-size: 17px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 808px) {
+ 
+   .project-headline {
+        padding: 0 20px;
+    }
+     .project-headline h1 {
+        font-size: 20px;
+    }
+   .project-headline p {
+        font-size: .8rem;
+    }
+   .project-headline button {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+    .project-cards {
+        padding: 0 10px;
+    }
+    .project-card {
+        width: 100vw;
+    }
+  .project-card h1  {
+        margin: 0 20px;
+    }
+   .project-card span  {
+        margin: 0 20px;
+    }
+     .project-img {
+        width: 100%;
+    }
+     .project-card img {
+        width: 90%;
+    }
+}
+
+
+/*----------------------- contact section --------------------*/
+.contact{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    background-color: #1e1e1e;
+    max-width: 1015px;
+    margin: auto;
+    margin-top: 30px;
+}
+.contact-left{
+    width: 70%;
+    margin-left: 20px;
+}
+.contact-right{
+    width: 25%;
+}
+.contact-left h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.contact-right .contact-btn{
+    background-color: #f83241;
+    border: none;
+    padding: 15px 35px;
+    color: #fff;
+    font-size: 20px;
+}
+@media screen and (max-width:638px) {
+    .contact-left h1{
+        font-size:20px;
+    }
+    .contact-left p{
+        font-size: 14px;
+    }
+    .contact-right .contact-btn{
+        background-color: #f83241;
+        border: none;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+/*----------------------- footer nav --------------------------*/
+.footer-nav ul {
+   
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    padding: 0 80px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    max-width: 90rem;
+    padding: 50px 50px;
+    
+}
+.social{
+    display: flex;
+    gap: 20px;
+    width: 60%;
+}
+@media screen and (max-width:550px) {
+    .social{
+        margin-left: 50px;
+    }
+}
